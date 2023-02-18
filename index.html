@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libary managment system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Libary managment system</h1>
+    <form>
+      <label for="bookname">Book Name:</label>
+      <input type="text" id="bookName"><br /><br>
+      <label for="issuedto">Issued To:</label>
+      <input type="text" id="issuedTo"><br /><br>
+      <input type="button" id="btn" value="Issue Book" onClick="issue_Book()" />
+    </form>
+    <h2>Issued Books</h2><hr>
+    <table id="issuedBooksTable" border="2" cellspacing="0">
+      <tr>
+        <th>ID</th>
+        <th>Book Name</th>
+        <th>Issued To</th>
+        <th>Issued Time</th>
+        <th>Status</th>
+      </tr>
+    </table>
+    <script src="index.js"> </script>
+
+</body>
+
+</html>
